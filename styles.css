@@ -1,0 +1,30 @@
+body {
+    background-color: rgba(245, 245, 245, 0.69);
+    color: black;
+    font-family:'Courier New', Courier, monospace /* San Francisco */
+
+}
+.header {
+    position: relative;
+    height: 5vh;
+    background-color: black;
+    text-align: center; 
+    opacity: 80%;
+    top: 0;
+}
+.header > a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    margin-left: 3em;
+    justify-content: flex-end;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.footer > #footer-line {
+    width: 30%;
+}
