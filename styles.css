@@ -1,30 +1,116 @@
 body {
-    background-color: rgba(245, 245, 245, 0.69);
+    background-color: rgba(245,245,247,1);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
-    font-family:'Courier New', Courier, monospace /* San Francisco */
-
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    /* src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
 }
-.header {
+header .header-ddf {
     position: relative;
     height: 5vh;
-    background-color: black;
     text-align: center; 
     opacity: 80%;
     top: 0;
 }
-.header > a {
+.header-ddf a {
     font-size: 18px;
     text-decoration: none;
     color: white;
 }
 
-.footer {
-    margin-left: 3em;
-    justify-content: flex-end;
-    bottom: 0;
-    font-size: 12px;
+a { color: black;}
+
+div .bg-image-hero {
+    width: 100%;
+    height: 379px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/am/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_largetall_2x.jpg);
+    right: 0;
+    top: 0;
+    /*aspect-ratio: attr(x)/attr(y);*/
 }
 
-.footer > #footer-line {
-    width: 30%;
+div .bg-image-product-one {
+    /* width: 100%;
+    height: 379px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/am/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_largetall_2x.jpg);
+    right: 0;
+    top: 0; */
+    /*aspect-ratio: attr(x)/attr(y);*/
+    width: 100%;
+    height: 379px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/an/images/heroes/iphone-se/hero_iphonese_preorder__e4eta8trjs66_largetall_2x.jpg);
 }
+
+div .bg-image-product-two {
+    width: 100%;
+    height: 379px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/home/an/images/heroes/ipad-air/hero_ipadair__flhdv47anjqu_largetall_2x.jpg);
+    right: 0;
+    top: 0;
+    /*aspect-ratio: attr(x)/attr(y);*/
+}
+
+div h1 {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+
+div p {
+    text-align: center;
+    color: black;
+}
+
+div p:hover {
+    text-decoration: underline;
+}
+
+.d-block {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* Set same as footer's height */
+  }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    height: 100px;
+    width: 100%;
+}
+
+.footer > #footer-line { width: 30%;}
+
+.title {
+    text-align: center;
+    font-family:"San Francisco";
+    font-weight: bold;
+}
+
+.aos {
+    text-align: left;
+    font-family: San Francisco;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cb { background-image: url(Apple1.jpg);}
+.sub { text-align: center;}
