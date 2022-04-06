@@ -1,4 +1,5 @@
 body {
+    max-width: 100%;
     background-color: rgba(245,245,247,1);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,6 +9,7 @@ body {
     /* src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
 }
 header {
+    width: 100%;
     position: relative;
     height: 5vh;
     background-color: black;
@@ -41,6 +43,26 @@ div .bg-image-hero {
     /*aspect-ratio: attr(x)/attr(y);*/
 }
 
+div .image-hero {
+    max-width: 100%;
+    width: 1920px;
+    height: 539px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone-13-pro/f/images/overview/hero/hero_endframe__3tq53uan9teq_xlarge_2x.jpg);
+    right: 0;
+    top: 0;
+}
+
+div .image-one {
+    /*aspect-ratio: attr(x)/attr(y);*/
+    width: 100%;
+    height: 1289px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/iphone-se/h/images/overview/camera/smart-hdr/camera__fja38b127ey6_large.jpg);
+}
+
 div .bg-image-product-one {
     /*aspect-ratio: attr(x)/attr(y);*/
     width: 100%;
@@ -61,8 +83,46 @@ div .bg-image-product-two {
     /*aspect-ratio: attr(x)/attr(y);*/
 }
 
+div .image-two {
+    width: 100%;
+    height: 1732px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202203?wid=1765&hei=2000&fmt=jpeg&qlt=95&.v=1645665079887);
+    right: 0;
+    top: 0;
+    /*aspect-ratio: attr(x)/attr(y);*/
+}
+
 .bg-image-hero h1 {
     padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+.bg-image-product-one h1 {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+.bg-image-product-two h1 {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+.image-hero h2 {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+.image-one h1 {
+    font-size: 50px;
+    padding-top: 4em;
+    text-align: center;
+    color: white;
+}
+.image-two h1 {
+    font-size: 70px;
+    padding-top: 4em;
     text-align: center;
     color: black;
 }
@@ -73,37 +133,48 @@ div .bg-image-product-two {
     margin-right: auto;
     margin-left: auto;
 }
-
-.bg-image-hero p:hover {
-    text-decoration: underline;
-}
-
-.bg-image-product-one h1 {
-    padding-top: 2em;
-    text-align: center;
-    color: black;
-}
-
 .bg-image-product-one p {
     text-align: center;
     color: black;
 }
-
-.bg-image-product-one p:hover {
-    text-decoration: underline;
-}
-
-.bg-image-product-two h1 {
-    padding-top: 2em;
+.image-hero p {
     text-align: center;
     color: black;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-one p {
+    text-align: center;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image-two p {
+    text-align: center;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .bg-image-product-two p {
     text-align: center;
     color: black;
 }
+div .bg-image-product-two h1 {
+    color: white;
+    text-align: left;
+}
+div .bg-image-product-two p {
+    color: white;
+    text-align: left;
+}
 
+.bg-image-hero p:hover {
+    text-decoration: underline;
+}
+.bg-image-product-one p:hover {
+    text-decoration: underline;
+}
 .bg-image-product-two p:hover {
     text-decoration: underline;
 }
@@ -111,16 +182,6 @@ div .bg-image-product-two {
 .bg-image-product-two div {
     padding-top: 3em;
     margin-left: 20em;
-}
-
-div .bg-image-product-two h1 {
-    color: white;
-    text-align: left;
-}
-
-div .bg-image-product-two p {
-    color: white;
-    text-align: left;
 }
 
 .d-block {
@@ -131,6 +192,11 @@ div .bg-image-product-two p {
 img {
     margin-left: auto;
     margin-right: auto;
+}
+
+.ed-text, .karl-text, .francis-text {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 body::after {
