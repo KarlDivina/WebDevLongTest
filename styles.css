@@ -7,20 +7,28 @@ body {
     font-weight: 400;
     /* src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
 }
-header .header-ddf {
+header {
     position: relative;
     height: 5vh;
+    background-color: black;
     text-align: center; 
     opacity: 80%;
     top: 0;
 }
-.header-ddf a {
+header a {
     font-size: 18px;
     text-decoration: none;
     color: white;
 }
 
-a { color: black;}
+a { 
+    color: black;
+}
+
+header a:hover, a:focus, a:active {
+    text-decoration: none;
+    color:white;
+}
 
 div .bg-image-hero {
     width: 100%;
@@ -34,13 +42,6 @@ div .bg-image-hero {
 }
 
 div .bg-image-product-one {
-    /* width: 100%;
-    height: 379px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: url(https://www.apple.com/v/home/am/images/heroes/iphone-13-pro-avail/hero_iphone13pro_preorder__d46ofk3816wm_largetall_2x.jpg);
-    right: 0;
-    top: 0; */
     /*aspect-ratio: attr(x)/attr(y);*/
     width: 100%;
     height: 379px;
@@ -60,24 +61,76 @@ div .bg-image-product-two {
     /*aspect-ratio: attr(x)/attr(y);*/
 }
 
-div h1 {
+.bg-image-hero h1 {
     padding-top: 2em;
     text-align: center;
     color: black;
 }
 
-div p {
+.bg-image-hero p {
+    text-align: center;
+    color: black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-image-hero p:hover {
+    text-decoration: underline;
+}
+
+.bg-image-product-one h1 {
+    padding-top: 2em;
     text-align: center;
     color: black;
 }
 
-div p:hover {
+.bg-image-product-one p {
+    text-align: center;
+    color: black;
+}
+
+.bg-image-product-one p:hover {
     text-decoration: underline;
+}
+
+.bg-image-product-two h1 {
+    padding-top: 2em;
+    text-align: center;
+    color: black;
+}
+
+.bg-image-product-two p {
+    text-align: center;
+    color: black;
+}
+
+.bg-image-product-two p:hover {
+    text-decoration: underline;
+}
+
+.bg-image-product-two div {
+    padding-top: 3em;
+    margin-left: 20em;
+}
+
+div .bg-image-product-two h1 {
+    color: white;
+    text-align: left;
+}
+
+div .bg-image-product-two p {
+    color: white;
+    text-align: left;
 }
 
 .d-block {
     margin-right: auto;
     margin-left: auto;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body::after {
